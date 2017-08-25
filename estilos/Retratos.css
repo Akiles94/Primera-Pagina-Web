@@ -1,0 +1,237 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/08/2017, 0:36:11
+    Author     : Oscar Vinueza
+*/
+body{
+    background-color: black;
+}
+#contenido{
+    clear:both;
+    display: flex;
+    flex-direction: column;
+    margin:0px 0px 0px 0px;
+    width:100%;
+    height:100%;
+    animation-name: anime4;
+    animation-duration: 1s;
+}
+@-webkit-keyframes anime4{
+    0%{
+        margin-top: 100%;
+    }
+    50%{
+        margin-top: -2%;
+    }
+    70%{
+        margin-top: 2%
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+header{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height:20%;
+    background-color: #5b7989;
+}
+header>h1{
+    padding: 1%;
+    flex-grow: 1;
+    animation-name: anime1;
+    animation-duration: 4s;
+}
+.enlaces{
+    text-decoration: underline;
+}
+#none{
+    text-decoration: none;
+}
+nav{
+    flex-grow: 1;
+    padding-top: 5%;
+    padding-left: 50%;
+}
+header nav a{
+    margin-left: 5%;
+    color:black;
+    font-size: 120%;
+    font-weight: bold;
+}
+h1,h2,h3,a{
+    font-family: 'Dancing Script', cursive;
+}
+a{
+    animation-name: anime1;
+    animation-duration: 4s;
+}
+img[id^='img']{
+    animation-name: anime2;
+    animation-duration: 4s;
+}
+#img1{
+    -webkit-filter:blur(10px);
+    filter:blur(10px);
+}
+#img3{
+    -webkit-filter:sepia(90%);
+    filter:sepia(90%);
+}
+.pares{
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+}
+#seccion2{
+    display: flex;
+    width:100%;
+    height:25%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #d5c75f;
+}
+#seccion2>img{
+    
+}
+img[src$='paisaje2.jpg']{
+    width:30%;
+}
+footer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width:100%;
+    height:30%;
+    background-color:#C6d5c5;
+}
+footer div{
+    text-align: justify;
+    padding-left:4%;
+    width: 20%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+footer div img{
+    padding-top: 5%;
+    width:50%;
+    height:50%;
+    border-radius:5px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+footer>div>.redes>h3{
+    padding-bottom: 20px;
+}
+#seccion2>img{
+    box-shadow: 5px 5px 5px black;
+    width:25%;
+    margin:4%;
+    margin-left: 4%;
+    height:10%;
+}
+footer>div>.redes>a{
+    padding-top: 5%;
+    width:20%;
+    height:30%;
+    border-radius:5px;
+}
+@-webkit-keyframes anime1{
+    0%{
+      opacity: 0.1;
+    }
+    20%{
+        
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    70%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes anime3{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(10deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+@-webkit-keyframes anime2{
+    from{
+        -webkit-filter:blur(10px);
+        filter:blur(10px);
+    }
+    to{
+        -webkit-filter:blur(0px);
+        filter:blur(0px);
+    }
+}
+@media(max-width:900px){
+    header{
+        flex-direction: column;
+    }
+    header>h1{
+        width:100%;
+        text-align: center;
+    }
+    header>nav{
+        width:100%;
+        padding-left: 20%;
+    }
+    footer{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    footer>div{
+        width:100%;
+    }
+    #seccion2{
+        flex-wrap: wrap;
+    }
+    #seccion2>div>img {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    #seccion2 {
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+    #seccion2>img{
+        width: 80%;
+        margin-left: 10%;
+    }
+    @-webkit-keyframes anime4{
+    0%{
+        margin-top: 100%;
+    }
+    50%{
+        margin-top: 0%;
+    }
+    70%{
+        margin-top: 10%
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+}

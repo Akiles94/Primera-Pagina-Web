@@ -1,0 +1,260 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22/08/2017, 15:10:18
+    Author     : Oscar Vinueza
+*/
+body{
+    background-color: black;
+}
+#contenido{
+    clear:both;
+    display: flex;
+    flex-direction: column;
+    margin:0px 0px 0px 0px;
+    width:100%;
+    height:100%;
+    animation-name: anime4;
+    animation-duration: 1s;
+}
+@-webkit-keyframes anime4{
+    0%{
+        margin-top: 100%;
+    }
+    50%{
+        margin-top: -2%;
+    }
+    70%{
+        margin-top: 2%
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+header{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height:20%;
+    background-color: #5b7989;
+}
+header>h1{
+    padding: 1%;
+    flex-grow: 1;
+    animation-name: anime1;
+    animation-duration: 4s;
+}
+.enlaces{
+    text-decoration: underline;
+}
+#none{
+    text-decoration: none;
+}
+nav{
+    flex-grow: 1;
+    padding-top: 5%;
+    padding-left: 50%;
+}
+header nav a{
+    margin-left: 5%;
+    color:black;
+    font-size: 120%;
+    font-weight: bold;
+}
+h1,h2,h3,a{
+    font-family: 'Dancing Script', cursive;
+}
+#seccion1{
+    width:100%;
+    height:25%;
+    background-color: #82c3a6;
+}
+a{
+    animation-name: anime1;
+    animation-duration: 4s;
+}
+img[id^='img']{
+    animation-name: anime2;
+    animation-duration: 2s;
+}
+#img1{
+    width: 90%;
+    height:80%;
+    margin: 5%;
+    box-shadow: #000000 5px 5px 5px;
+}
+#seccion2{
+    display: flex;
+    width:100%;
+    height:25%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #d5c75f;
+}
+#seccion2>div{
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+#seccion2>div>img{
+    width:90%;
+    height:80%;
+    box-shadow: black 5px 5px 5px;
+    margin-top: 2%;
+    margin-left:2%;
+}
+#seccion2>div>#img3{
+    margin-top: 4%;
+}
+#seccion2>div>a{
+    margin-top: 2%;
+    margin-left: 40%;
+    font-size: 120%;
+    font-weight: bold;
+}
+footer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width:100%;
+    height:30%;
+    background-color:#C6d5c5;
+}
+footer div{
+    text-align: justify;
+    padding-left:4%;
+    width: 20%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+footer div img{
+    padding-top: 5%;
+    width:50%;
+    height:50%;
+    border-radius:5px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+footer>div>.redes>h3{
+    padding-bottom: 20px;
+}
+#img3:hover{
+    animation-name:anime5;
+    animation-duration: 2s;
+}
+#img2:hover{
+    animation-name:anime3;
+    animation-duration: 2s;
+}
+footer>div>.redes>a{
+    padding-top: 5%;
+    width:20%;
+    height:30%;
+    border-radius:5px;
+}
+@-webkit-keyframes anime1{
+    0%{
+      opacity: 0.1;
+    }
+    20%{
+        
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    70%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes anime3{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(10deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+@-webkit-keyframes anime5{
+    0%{
+        transform: translateY(0px) translateX(0px);
+    }
+    50%{
+        transform: translateY(-5px) translateX(20px);
+    }
+    100%{
+        transform: translateY(0px) translateX(0px);
+    }
+}
+@-webkit-keyframes anime2{
+    from{
+        -webkit-filter:blur(10px);
+        filter:blur(10px);
+    }
+    to{
+        -webkit-filter:blur(0px);
+        filter:blur(0px);
+    }
+}
+@media(max-width:900px){
+    header{
+        flex-direction: column;
+    }
+    header>h1{
+        width:100%;
+        text-align: center;
+    }
+    header>nav{
+        width:100%;
+        padding-left: 20%;
+    }
+    footer{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    footer>div{
+        width:100%;
+    }
+    #seccion2 {
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+    #seccion2>img{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #seccion2>div>img{
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    @-webkit-keyframes anime4{
+    0%{
+        margin-top: 100%;
+    }
+    50%{
+        margin-top: 0%;
+    }
+    70%{
+        margin-top: 10%
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+}
